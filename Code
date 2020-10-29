@@ -21,7 +21,7 @@ calc = Frame(root)
 calc.grid()
 
 
-#=============Functions==================================================================================================
+#=============FUNCTION===================================================================================================
 
 class Calc():
     def __init__(self):
@@ -38,7 +38,7 @@ class Calc():
         if self.input_value:
             self.current=secondnum
             self.input_value=False
-        else:
+    else:
             if secondnum=='.':
                 if secondnum in firstnum:
                     return
@@ -409,7 +409,7 @@ menubar.add_cascade(label = "Help", menu=helpmenu)
 helpmenu.add_command(label = "View Help")
 """
 
-#====================Main Loop=============================================================================
+#======================MAIN Loop=============================================================================
 
 root.config(menu=menubar)
 root.mainloop()
